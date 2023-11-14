@@ -36,3 +36,426 @@
     transform: rotate(360deg);
   }
 }
+
+
+.navBarContainer{
+  background-color: pink;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.navBarLeft{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+.navBarRight{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navBarLeft ul > li {
+  float: left;
+  text-decoration: none;
+  list-style: none;
+  margin-left: 103px;
+  padding: 10px;
+  position: relative;
+}
+
+.navBarRight ul > li {
+  float: left;
+  text-decoration: none;
+  list-style: none;
+  margin-left: 103px;
+  padding: 10px;
+  position: relative;
+}
+
+.navBarContainer a:visited{
+  list-style: none;
+  color: black;
+}
+
+.registerForm{
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: pink;
+}
+
+.registerLabel{
+    display: block;
+    margin-bottom: 8px;
+}
+
+.registerForm > input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.registerForm > button {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.registerForm > button:hover{       background-color: darkgreen;
+}
+
+.search-container {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.findPartner form { 
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 400px;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.findPartner label { 
+  display: block;
+  margin-bottom: 8px;
+}
+
+.findPartner input  {
+  width: calc(100% - 16px);
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.findPartner button {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.findPartner button:hover{
+  background-color: darkgreen;
+
+}
+
+.distance-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.users-panel {
+  width: 25%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  height: 1000px
+}
+
+.user-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.user-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.user-description {
+  color: #555;
+}
+
+.chat-container {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-window {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.message-list {
+  overflow-y: auto;
+  max-height: calc(100vh - 60px);
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 0;
+}
+
+.message {
+  background-color: #e6e6e6;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.message-input {
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.message-input input {
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.message-input button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.chat{
+  display: flex;
+}
+
+.newPerson {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.user-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user-details {
+  text-align: center;
+}
+
+.user-name, .user-age, .user-location {
+  margin-bottom: 10px;
+}
+
+.accept-button, .reject-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50px; 
+  margin-right: 10px; 
+}
+
+.reject-button {
+  background-color: #e74c3c;
+}
+
+.strangerProfile {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 40vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+}
+
+.user-profile {
+  display: flex;
+  max-width: 95%;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.left-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+  padding: 20px;
+  text-align: center;
+}
+
+.right-column {
+  flex: 2;
+  padding: 20px;
+}
+
+.user-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.decision-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.profile-details {
+  margin-bottom: 20px;
+}
+
+.user-description {
+  margin-bottom: 20px;
+}
+
+.user-interests {
+  font-weight: bold;
+}
+
+.myProfile {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+}
+
+.user-profile {
+  display: flex;
+  max-width: 95%;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.left-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+  padding: 20px;
+  text-align: center;
+}
+
+.right-column {
+  flex: 2;
+  padding: 20px;
+}
+
+.profile-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.user-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.user-details {
+  text-align: left;
+}
+
+.about-me-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.user-description {
+  margin-bottom: 20px;
+}
+
+.gallery-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.interests-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.interests-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
