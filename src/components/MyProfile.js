@@ -40,6 +40,13 @@ export default function () {
                     </div>
 
                     <div class="gallery-header" style={{fontSize: font}}>MOJE ZDJĘCIA</div>
+                    {butto ?
+                        (<div style={{ marginLeft: "80%", cursor: "pointer"}} onClick={() => { setButto(!butto) }}>Edytuj</div>) : (
+                            <>
+                                <div style={{ marginLeft: "80%", cursor: "pointer"}} onClick={() => { setButto(!butto) }}>Usuń profil</div>
+                                <div style={{ marginLeft: "80%", cursor: "pointer"}} onClick={() => { setButto(!butto) }}>Zapisz Profil</div></>
+                        )
+                    }
                     <div class="photo-gallery">
                         <img src="http://www.thispersondoesnotexist.com" alt="Photo 1" width={"120px"} height={"120px"} />
                         <img src="http://www.thispersondoesnotexist.com" alt="Photo 2" width={"120px"} height={"120px"} />
@@ -52,13 +59,7 @@ export default function () {
                         <div style={{fontSize: font}}>Komputer</div>
                         <div style={{fontSize: font}}>Jedzenie</div>
                         <div style={{fontSize: font}}>Filmy</div>
-                        {butto ?
-                        (<div style={{ marginLeft: "80%", cursor: "pointer"}} onClick={() => { setButto(!butto) }}>Edytuj konto</div>) : (
-                            <>
-                                <div style={{ marginLeft: "80%", cursor: "pointer"}} onClick={() => { setButto(!butto) }}>Usuń profil</div>
-                                <div style={{ marginLeft: "80%", cursor: "pointer"}} onClick={() => { setButto(!butto) }}>Zapisz Profil</div></>
-                        )
-                    }
+                        
                     </div>
                 </div>
             </div>
