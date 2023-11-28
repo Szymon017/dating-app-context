@@ -32,14 +32,12 @@ export default function NavBar() {
                 </div>
                 <div className="navBarRight">
                     <ul>
-                        <li><a href="" style={{ fontSize: font }}>
-                            <button onClick={decreaseFontSize}>Pomniejsz</button>
-                            <button onClick={increaseFontSize}>Powiększ</button>
-                        </a></li>
-                        <li><a href="Logout" style={{ fontSize: font }}>Wyloguj</a></li>
+                       
                     </ul>
                 </div>
             </div>
+
+
         </>
     );
 }

@@ -25,9 +25,9 @@ function App() {
     },
   });
 
-  useEffect(()=>{
+  useEffect(() => {
     console.log(appValues);
-  },appValues)
+  }, appValues)
   return (
     <AppContext.Provider value={appValues}>
       <div className="App">
@@ -43,10 +43,15 @@ function App() {
               <Route path="/acceptNewPerson" element={<AcceptNewPerson />} />
               <Route path="/register" element={<RegisterForm />} />
             </Routes>
+            <footer>
+
+              <a href="Logout">Wyloguj</a>
+            </footer>
           </div>
         </Router>
       </div>
     </AppContext.Provider>
+
   );
 }
 

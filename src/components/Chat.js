@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, { useContext, useEffect } from 'react';
 import { AppContext } from '../App.js';
 
 export default function Chat() {
@@ -34,7 +34,7 @@ export default function Chat() {
       </div>
 
       <div class="message-input">
-        <input type="text" placeholder="Wpisz wiadomość"/>
+        <input type="text" placeholder=""/>
         <button type="button" style={{fontSize: font}}>Wyślij</button>
       </div>
     </div>

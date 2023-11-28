@@ -12,9 +12,9 @@ export default function () {
     return (
         <div className='newPerson'>
             <div class="button-container">
-                <button class="reject-button">NIE</button>
+                <button class="accept-button">NIE</button>
                 <img src="https://thispersondoesnotexist.com/" alt="User Image" class="user-image" />
-                <button class="accept-button" onClick={redirectToAnotherPage}>TAK</button>
+                <button class="reject-button" onClick={redirectToAnotherPage}>TAK</button>
             </div>
 
             <div class="user-details">
@@ -22,6 +22,8 @@ export default function () {
                 <div class="user-age"  style={{fontSize: font}}>Wiek: 25</div>
                 <div class="user-location"  style={{fontSize: font}}>Miejscowość: Warszawa</div>
             </div>
+            
         </div>
+        
     )
 }

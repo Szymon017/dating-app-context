@@ -24,13 +24,7 @@ export default function () {
                 </div>
 
                 <div class="right-column">
-                    {butto ?
-                        (<div style={{ marginLeft: "80%", cursor: "pointer", backgroundColor: "gray" }} onClick={() => { setButto(!butto) }}>Edytuj konto</div>) : (
-                            <>
-                                <div style={{ marginLeft: "80%", cursor: "pointer", backgroundColor: "red" }} onClick={() => { setButto(!butto) }}>Usuń profil</div>
-                                <div style={{ marginLeft: "80%", cursor: "pointer", backgroundColor: "gray" }} onClick={() => { setButto(!butto) }}>Zapisz Profil</div></>
-                        )
-                    }
+                   
                     <div class="about-me-header" style={{fontSize: font}}>O MNIE</div>
                     <div class="user-description" >
                         <p>Cześć! Nazywam się Tomek i mam 15 lat. Jestem pełen energii nastolatek z pasją do odkrywania świata i poznawania nowych rzeczy. Moje życie jest jak otwarta księga, a każdy dzień to nowa przygoda.
@@ -58,7 +52,13 @@ export default function () {
                         <div style={{fontSize: font}}>Komputer</div>
                         <div style={{fontSize: font}}>Jedzenie</div>
                         <div style={{fontSize: font}}>Filmy</div>
-
+                        {butto ?
+                        (<div style={{ marginLeft: "80%", cursor: "pointer"}} onClick={() => { setButto(!butto) }}>Edytuj konto</div>) : (
+                            <>
+                                <div style={{ marginLeft: "80%", cursor: "pointer"}} onClick={() => { setButto(!butto) }}>Usuń profil</div>
+                                <div style={{ marginLeft: "80%", cursor: "pointer"}} onClick={() => { setButto(!butto) }}>Zapisz Profil</div></>
+                        )
+                    }
                     </div>
                 </div>
             </div>
