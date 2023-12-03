@@ -12,15 +12,21 @@ export default function () {
 
             <div class="user-profile">
                 <div class="left-column">
-                    <div class="profile-header" style={{fontSize: font}}>Twój Profil</div>
+                    <div class="profile-header" style={{ fontSize: font }}>Twój Profil</div>
                     <img src="http://www.thispersondoesnotexist.com" alt="User Image" class="user-image" />
                     <div class="user-details">
-                        <div style={{fontSize: font}}>Imię: Tomek</div>
-                        <div style={{fontSize: font}}>Nazwisko: Janik</div>
-                        <div style={{fontSize: font}}>Lokalizacja: Warszawa</div>
-                        <div style={{fontSize: font}}>Czy ma dzieci: Nie</div>
-                        <div style={{fontSize: font}}>Wiek: 15 lat</div>
+                        <div style={{ fontSize: font }}>Imię: Tomek</div>
+                        <div style={{ fontSize: font }}>Nazwisko: Janik</div>
+                        <div style={{ fontSize: font }}>Lokalizacja: Warszawa</div>
+                        <div style={{ fontSize: font }}>Czy ma dzieci: Nie</div>
+                        <div style={{ fontSize: font }}>Wiek: 15 lat</div>
                     </div>
+                    <div style={{marginTop: 50, padding: 20, border: "2px solid black", backgroundColor: "pink"}}>
+                        <a href="Chat" style={{ fontSize: font }}>
+                            Czat
+                        </a>
+                    </div>
+
                 </div>
 
                 <div class="right-column">
@@ -31,7 +37,7 @@ export default function () {
                                 <div style={{ marginLeft: "80%", cursor: "pointer", backgroundColor: "gray" }} onClick={() => { setButto(!butto) }}>Zapisz Profil</div></>
                         )
                     }
-                    <div class="about-me-header" style={{fontSize: font}}>O MNIE</div>
+                    <div class="about-me-header" style={{ fontSize: font }}>O MNIE</div>
                     <div class="user-description" >
                         <p>Cześć! Nazywam się Tomek i mam 15 lat. Jestem pełen energii nastolatek z pasją do odkrywania świata i poznawania nowych rzeczy. Moje życie jest jak otwarta księga, a każdy dzień to nowa przygoda.
 
@@ -45,7 +51,7 @@ export default function () {
                         </p>
                     </div>
 
-                    <div class="gallery-header" style={{fontSize: font}}>MOJE ZDJĘCIA</div>
+                    <div class="gallery-header" style={{ fontSize: font }}>MOJE ZDJĘCIA</div>
                     <div class="photo-gallery">
                         <img src="http://www.thispersondoesnotexist.com" alt="Photo 1" width={"120px"} height={"120px"} />
                         <img src="http://www.thispersondoesnotexist.com" alt="Photo 2" width={"120px"} height={"120px"} />
@@ -53,11 +59,11 @@ export default function () {
 
                     </div>
 
-                    <div class="interests-header" style={{fontSize: font}}>MOJE ZAINTERESOWANIA</div>
+                    <div class="interests-header" style={{ fontSize: font }}>MOJE ZAINTERESOWANIA</div>
                     <div class="interests-gallery">
-                        <div style={{fontSize: font}}>Komputer</div>
-                        <div style={{fontSize: font}}>Jedzenie</div>
-                        <div style={{fontSize: font}}>Filmy</div>
+                        <div style={{ fontSize: font }}>Komputer</div>
+                        <div style={{ fontSize: font }}>Jedzenie</div>
+                        <div style={{ fontSize: font }}>Filmy</div>
 
                     </div>
                 </div>

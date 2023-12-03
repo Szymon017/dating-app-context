@@ -459,3 +459,32 @@
   flex-wrap: wrap;
   gap: 10px;
 }
+
+.subMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.navBarContainer.expanded .subMenu {
+  display: flex;
+}
+
+.subMenu li {
+  padding: 10px;
+  text-align: left;
+}
+
+.subMenu a {
+  text-decoration: none;
+  color: #333;
+}
+
+.subMenu a:hover {
+  background-color: #ddd;
+}

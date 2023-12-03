@@ -220,6 +220,9 @@ X. Postanowienia końcowe
 
 10.3. W sprawach nieuregulowanych w niniejszym Regulaminie mają zastosowanie przepisy Kodeksu cywilnego, przepisy Ustawy o świadczeniu usług drogą elektroniczną oraz inne właściwe przepisy prawa polskiego.
     </div>
+
+
+    <p><a href='contact'>Kontakt</a></p>
     </>
       );
 };
