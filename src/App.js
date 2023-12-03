@@ -8,7 +8,9 @@ import MyProfile from './components/MyProfile';
 import NavBar from './components/NavBar';
 import RegisterForm from './components/RegisterForm';
 import StrangerProfile from './components/StangerProfile'
+import Regulamin from './components/Regulamin';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Contact from './components/Contact';
 
 export const AppContext = createContext();
 
@@ -42,6 +44,9 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/acceptNewPerson" element={<AcceptNewPerson />} />
               <Route path="/register" element={<RegisterForm />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/regulamin" element={<Regulamin />} />
+
             </Routes>
           </div>
         </Router>

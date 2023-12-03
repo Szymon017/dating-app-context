@@ -28,6 +28,9 @@ export default function NavBar() {
                         <li><a href="FindPartner" style={{ fontSize: font }}>Szukaj osób</a></li>
                         <li><a href="Chat" style={{ fontSize: font }}>Czat</a></li>
                         <li><a href="MyProfile" style={{ fontSize: font }}>Mój profil</a></li>
+                        <li><a href="contact" style={{ fontSize: font }}>Kontakt</a></li>
+                        <li><a href="regulamin" style={{ fontSize: font }}>Regulamin</a></li>
+
                     </ul>
                 </div>
                 <div className="navBarRight">
